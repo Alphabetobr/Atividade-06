@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@extends('template')
+
+@section('content')
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
@@ -34,7 +33,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
 
@@ -45,7 +44,7 @@ h2 {
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -308,7 +307,7 @@ input[type=text]:placeholder {
 
 *:focus {
     outline: none;
-} 
+}
 
 #icon {
   width:60%;
@@ -343,11 +342,11 @@ input[type=text]:placeholder {
     <!-- Login Form -->
     <form method="post" action="{{route('cadastro.page')}}">
         @csrf
-    <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nome Completo">
+    <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nome de Usuário">
     <input type="email" id="email" class="fadeIn second" name="email" placeholder="E-mail">
     <input type="password" id="password" class="fadeIn third" name="password" placeholder="Senha">
-    <input type="submit" class="fadeIn fourth" value="Registrar-se"> 
-    </form> 
+    <input type="submit" class="fadeIn fourth" value="Registrar-se">
+    </form>
 
     <!-- already logged-->
     <div id="formFooter">
@@ -357,5 +356,4 @@ input[type=text]:placeholder {
   </div>
 </div>
 </body>
-</html>
-    
+@endsection

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template')
 <head>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 
- <meta charset="utf-8">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -55,8 +54,9 @@ bgc2, .vLine, .hLine {
 </style>
 
 </head>
+@section('content')
 <body>
-<h1>Hello, world!</h1>
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
@@ -67,7 +67,7 @@ bgc2, .vLine, .hLine {
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="{{route('lista.page')}}">Tables
                 <span class="sr-only">(current)</span>
               </a>
         </li>
@@ -128,7 +128,7 @@ bgc2, .vLine, .hLine {
 
 <!-- Page Content -->
 <section class="py-5 text-center">
-      <div class="container"> 
+      <div class="container">
         <h2 class="text-center">Luckmoshy`s Services</h2>
         <p class="text-muted mb-5 text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
         <div class="row">
@@ -249,7 +249,7 @@ bgc2, .vLine, .hLine {
 </div>
    </div>
    </section>
-   
+
    <!-- Header -->
 <header class="bg-primary text-center py-5 mb-4">
   <div class="container">
@@ -310,7 +310,7 @@ bgc2, .vLine, .hLine {
          <div class="col-md-8">
         <blockquote class="blockquote text-center mb-0">
           <svg class="lnr text-muted quote-icon pull-left">
-            <use xlink:href="#lnr-heart">                                       
+            <use xlink:href="#lnr-heart">
           </use></svg>
           <p class="mb-0">Keep in touch with me for more Theme  right here!</p>
           <footer class="blockquote-footer">Luckmoshy Designing
@@ -331,7 +331,7 @@ bgc2, .vLine, .hLine {
          </span>
 </a></div>
         </div>
-        
+
       </div>
 <!-- /.container -->
     <!-- Optional JavaScript -->
@@ -343,3 +343,4 @@ bgc2, .vLine, .hLine {
 
 </body>
 </html>
+@endsection
