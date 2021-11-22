@@ -27,14 +27,7 @@
 
                  <button class="btn btn-success">Cadastrar</button>
              </a>
-
-             <a href="{{url('Filmes/show')}}">
-
-                <button class="btn btn-success">mostrar</button>
-            </a>
-
-
-            </div>
+git
             <br>
             <div class="card mb-4">
 
