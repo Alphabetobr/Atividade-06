@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\MovieRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use App\Models\filmes;
 
 class UserController extends Controller
 {
+
+
     public function login()
     {
         return view("login");
@@ -32,6 +36,11 @@ class UserController extends Controller
         }
     }
 
+    public function teste()
+    {
+        return view('painel');
+    }
+
     public function register()
     {
         return view('cadastro');
@@ -50,5 +59,6 @@ class UserController extends Controller
         User::create($request->all());
         return redirect()->route('login.page');
     }
+
 }
 
